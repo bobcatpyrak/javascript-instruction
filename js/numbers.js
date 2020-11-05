@@ -20,7 +20,7 @@ for(let i of nbrs)
         low = i;
 }
 
-function showNum()
+const showNum = () =>
 {
     let highest = document.getElementById("high");
     let lowest = document.getElementById("low");
