@@ -40,6 +40,12 @@ const makeTable = () =>
 
 const addStudent = () =>
 {
-    stud = new Student(document.getElementById("newName").value, document.getElementById("newColor").value, document.getElementById("newNumber").value);
-    students.push(stud);
+    let newName = document.getElementById("newName").value;
+    let newColor = document.getElementById("newColor").value;
+    let newNumber = document.getElementById("newNumber").value;
+    if (newName != "" && newColor != "" && newNumber != "")
+    {
+        stud = new Student(newName, newColor, newNumber);
+        students.push(stud);
+    }
 }
