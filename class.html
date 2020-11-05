@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="js/class.js"></script>
+</head>
+<body>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Favorite Color</th>
+            <th scope="col">Favorite Number</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+        </table>
+        <button type="button" class="btn btn-success" OnClick=makeTable()>Create Table</button>
+        <div>Add a student:</div>
+        <div>
+            <label>Name: </label>
+            <input id="newName" type="text">
+            <label>Favorite Color: </label>
+            <input id="newColor" type="text">
+            <label>Favorite Number: </label>
+            <input id="newNumber" type="number">
+        </div>
+        <button type="button" class="btn btn-success" OnClick=addStudent()>Save Student</button>
+
+</body>
+</html>
